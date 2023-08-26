@@ -14,7 +14,7 @@ export const regesterCloudflareDNS = async (
         name: subdomain,
         content: ip,
         ttl: 1,
-        proxied: false,
+        proxied: true,
       },
       {
         headers: {
@@ -49,7 +49,7 @@ export const editCloudflareDNS = async (
         name: subdomain,
         content: ip,
         ttl: 1,
-        proxied: false,
+        proxied: true,
       },
       {
         headers: {
