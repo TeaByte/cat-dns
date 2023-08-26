@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "generate": "npx prisma generate",
+    "postinstall": "npm run generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
