@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 
 export default function Footer() {
@@ -49,15 +48,15 @@ export default function Footer() {
             </svg>
             <a
               title="TeaByte Bitcoin Address"
-              href="bitcoin:16gHnv3NTjpF5ZavMi9QYBFxUkNchdicUS"
+              href="bitcoin:bc1qdaj3mcww8ryr3vnyy9sy83yggafl762lquz56z"
               className="hover:underline text-ellipsis overflow-hidden truncate text-sm max-w-[150px] md:max-w-[2000px]"
             >
-              16gHnv3NTjpF5ZavMi9QYBFxUkNchdicUS
+              bc1qdaj3mcww8ryr3vnyy9sy83yggafl762lquz56z
             </a>
           </div>
         </div>
         <div className="flex gap-3">
-          <Link href="https://cloudflare">
+          <a href="https://cloudflare" target="_blank">
             <Image
               src="/cloudflare.png"
               width={120}
@@ -65,8 +64,8 @@ export default function Footer() {
               alt="Service Provider ( Cloudflare DNS ) Logo"
               className="hover:scale-105 hover:opacity-80"
             />
-          </Link>
-          <Link href="https://vercel.com">
+          </a>
+          <a href="https://vercel.com" target="_blank">
             <Image
               src="/vercel.png"
               width={140}
@@ -74,7 +73,7 @@ export default function Footer() {
               alt="Service Provider ( Vercel Hosting ) Logo"
               className="hover:scale-105 hover:opacity-80"
             />
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

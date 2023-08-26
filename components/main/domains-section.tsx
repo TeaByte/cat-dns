@@ -28,7 +28,7 @@ export default function SubDomain({
     <>
       <div className="flex flex-col gap-2 items-center md:w-1/3">
         <span className="w-full text-center border-primary border-2 bg-background text-primary p-2 px-4 rounded-md">
-          http://{subdomain}.dns.nl
+          http://{subdomain}.catdns.in
         </span>
 
         <Dialog>

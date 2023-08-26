@@ -12,11 +12,12 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
-
+import { useSubDomain } from "@/components/context/context";
 import { useState } from "react";
 
 export default function Form() {
   const { toast } = useToast();
+  const { addSubdomain } = useSubDomain();
   const [subdomain, setSubdomain] = useState("");
   const [content, setContent] = useState("");
   const [record, setRecord] = useState("A");
@@ -43,6 +44,13 @@ export default function Form() {
         toast({
           title: "Success",
           description: "Your request was successful.",
+        });
+        addSubdomain({
+          subdomain,
+          content,
+          record,
+          id: data.result.id,
+          ownerId: "",
         });
       }
     } catch {
@@ -74,10 +82,9 @@ export default function Form() {
           required
         />
         <span className="bg-primary text-white rounded-r-lg p-1 px-3">
-          .dns.nl
+          .catdns.in
         </span>
       </div>
-
       <div className="flex flex-col gap-2">
         <div className="flex gap-2">
           <Input

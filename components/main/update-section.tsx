@@ -13,12 +13,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import { useSubDomain } from "@/components/context/context";
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
 interface UpdateFormProps {
   subdomainData: string;
-  recordData?: string;
+  recordData: string;
   contentData: string;
   id: string;
 }
@@ -30,6 +31,7 @@ export default function UpdateForm({
   id,
 }: UpdateFormProps) {
   const { toast } = useToast();
+  const { updateSubdomain } = useSubDomain();
   const [content, setContent] = useState(contentData);
   const [record, setRecord] = useState(recordData);
   const [disabled, setDisabled] = useState(false);
@@ -65,6 +67,13 @@ export default function UpdateForm({
       });
     } finally {
       setDisabled(false);
+      updateSubdomain({
+        id,
+        record,
+        content,
+        subdomain: subdomainData,
+        ownerId: "",
+      });
     }
   };
 

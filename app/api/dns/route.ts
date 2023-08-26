@@ -9,7 +9,35 @@ import {
 } from "@/lib/cloudflare";
 import { prisma } from "@/lib/prisma";
 
-const MAX_SUBDOMAINS = 4;
+const MAX_SUBDOMAINS = 3;
+
+export async function GET(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    return NextResponse.redirect(new URL("/api/auth/signin", req.url));
+  }
+
+  try {
+    const subdomains = await prisma.subDomain.findMany({
+      where: {
+        owner: {
+          email: session.user?.email,
+        },
+      },
+    });
+    return NextResponse.json({
+      errors: [],
+      result: {
+        subdomains,
+      },
+    });
+  } catch {
+    return NextResponse.json({
+      errors: [{ message: "Unexpected error.", code: 500 }],
+      result: {},
+    });
+  }
+}
 
 export async function POST(req: NextRequest) {
   const session = await getServerSession(authOptions);

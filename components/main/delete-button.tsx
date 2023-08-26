@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import { useSubDomain } from "@/components/context/context";
 
 interface DeleteBtnProps {
   subdomain: string;
@@ -12,6 +13,7 @@ interface DeleteBtnProps {
 
 export default function DeleteBtn({ subdomain, id }: DeleteBtnProps) {
   const { toast } = useToast();
+  const { deleteSubdomain } = useSubDomain();
   const [disabled, setDisabled] = useState(false);
   const onClick = async () => {
     setDisabled(true);
@@ -42,6 +44,7 @@ export default function DeleteBtn({ subdomain, id }: DeleteBtnProps) {
       });
     } finally {
       setDisabled(false);
+      deleteSubdomain(id);
     }
   };
   return (
