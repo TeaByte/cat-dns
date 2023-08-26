@@ -1,34 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![Hero](https://i.ibb.co/2FYtPnr/github-md.jpg)
 
-## Getting Started
 
-First, run the development server:
+1. **Clone the Repository**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+    ```sh
+    git clone https://github.com/TeaByte/catdns.git
+    cd catdns
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Install Dependencies**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    ```sh
+    npm install
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. **Make `.env` File**
 
-## Learn More
+     ```env
+    # Github Oauth
+    GITHUB_ID=Iv1.08bc0f...
+    GITHUB_SECRET=7c4a88b705f....
+    
+    
+    # NextJS
+    NEXTAUTH_URL=https://07ba-5-1....
+    NEXTAUTH_SECRET=2jOHkDR1p9zV....
 
-To learn more about Next.js, take a look at the following resources:
+    # Database ( Storing Users )
+    DATABASE_URL=postgres://TeaByte:HuypCZG....
+    SHADOW_DATABASE_URL=postgres://TeaByte:H....
+    
+    # Cloudflare ( For DNS Mangment )
+    CLOUDFLARE_API_KEY=WWEX-j9I.....
+    CLOUDFLARE_ZONE_ID=070a08f9a.....
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Start the Development Server**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    ```sh
+    npm run dev
+    ```
+##
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![Hero](https://i.ibb.co/8xN33sx/auth-hero-small.jpg)
