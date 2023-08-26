@@ -1,6 +1,5 @@
 ![Hero](https://i.ibb.co/2FYtPnr/github-md.jpg)
 
-
 1. **Clone the Repository**
 
     ```sh
@@ -17,10 +16,9 @@
 3. **Make `.env` File**
 
      ```env
-    # Github Oauth
+    # Github OAuth
     GITHUB_ID=Iv1.08bc0f...
     GITHUB_SECRET=7c4a88b705f....
-    
     
     # NextJS
     NEXTAUTH_URL=https://07ba-5-1....
@@ -34,6 +32,9 @@
     CLOUDFLARE_API_KEY=WWEX-j9I.....
     CLOUDFLARE_ZONE_ID=070a08f9a.....
     ```
+    Cloudflare Tokens: https://developers.cloudflare.com/fundamentals/api/get-started/create-token  
+    Github Tokens: https://github.com/settings/apps  
+    Neon PostgreSQL: https://console.neon.tech
 
 4. **Start the Development Server**
 
@@ -42,4 +43,9 @@
     ```
 ##
 
-![Hero](https://i.ibb.co/8xN33sx/auth-hero-small.jpg)
+![photo](https://i.ibb.co/8xN33sx/auth-hero-small.jpg)
+
+
+<div style="text-align:center">
+    <img src="https://i.ibb.co/8xN33sx/auth-hero-small.jpg" alt="Hero">
+</div>
