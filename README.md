@@ -44,8 +44,3 @@
 ##
 
 ![photo](https://i.ibb.co/8xN33sx/auth-hero-small.jpg)
-
-
-<div style="text-align:center">
-    <img src="https://i.ibb.co/8xN33sx/auth-hero-small.jpg" alt="Hero">
-</div>
