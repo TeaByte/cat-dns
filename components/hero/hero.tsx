@@ -5,7 +5,7 @@ export default function Hero() {
     <section>
       <div className="bg-secondary rounded-lg flex justify-between md:items-center gap-10 p-8">
         <div className="flex flex-col gap-2">
-          <p className="opacity-80">SignIn to start using Cat DNS</p>
+          <p className="opacity-80 underline">SignIn to start using Cat DNS</p>
           Cat DNS: Your Purr-fect Dynamic DNS Solution Cat DNS is your
           feline-friendly, free dynamic DNS service that brings simplicity and
           convenience to managing your changing IP addresses. Just like a cat
@@ -16,7 +16,7 @@ export default function Hero() {
             className="opacity-50 hover:underline"
             target="_blank"
           >
-            Support us by giving us a ⭐ on GitHub
+            Please ⭐ us on GitHub!
           </a>
         </div>
 
