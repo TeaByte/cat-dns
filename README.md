@@ -1,4 +1,7 @@
-![Hero](https://i.ibb.co/2FYtPnr/github-md.jpg)
+
+<p align="center">
+  <img src="https://i.ibb.co/X7T10pM/12-Capture-modified.png">
+</p>
 
 1. **Clone the Repository**
 
