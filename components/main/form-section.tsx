@@ -37,7 +37,9 @@ export default function Form() {
       if (data.errors.length > 0) {
         toast({
           title: `Error ${data.errors[0].code}`,
-          description: `${data.errors[0].message}`,
+          description:
+            `${data.errors[0].message}` +
+            `\n(${data.errors[0].error_chain[0].message || ""})`,
           variant: "destructive",
         });
       } else {
@@ -66,7 +68,7 @@ export default function Form() {
 
   return (
     <form
-      className="bg-secondary rounded-lg p-4 flex flex-col gap-2 items-center"
+      className="bg-secondary border border-primary rounded-lg p-4 flex flex-col gap-2 items-center"
       onSubmit={handleSubmit}
     >
       <div className="flex items-center justify-center">

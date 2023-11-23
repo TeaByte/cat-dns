@@ -6,12 +6,12 @@ import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 import { useSubDomain } from "@/components/context/context";
 
-interface DeleteBtnProps {
+interface deleteBtnProps {
   subdomain: string;
   id: string;
 }
 
-export default function DeleteBtn({ subdomain, id }: DeleteBtnProps) {
+export default function DeleteBtn({ subdomain, id }: deleteBtnProps) {
   const { toast } = useToast();
   const { deleteSubdomain } = useSubDomain();
   const [disabled, setDisabled] = useState(false);

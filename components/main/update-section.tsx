@@ -17,7 +17,7 @@ import { useSubDomain } from "@/components/context/context";
 import { useToast } from "@/components/ui/use-toast";
 import { useState } from "react";
 
-interface UpdateFormProps {
+interface updateFormProps {
   subdomainData: string;
   recordData: string;
   contentData: string;
@@ -29,7 +29,7 @@ export default function UpdateForm({
   recordData,
   contentData,
   id,
-}: UpdateFormProps) {
+}: updateFormProps) {
   const { toast } = useToast();
   const { updateSubdomain } = useSubDomain();
   const [content, setContent] = useState(contentData);

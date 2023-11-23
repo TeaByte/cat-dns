@@ -5,7 +5,7 @@ import UserDomains from "@/components/main/user-domains";
 import { useSubDomain } from "@/components/context/context";
 import { useEffect } from "react";
 
-interface SignInHeroProps {
+interface signInHeroProps {
   subdomains: {
     id: string;
     subdomain: string;
@@ -14,7 +14,7 @@ interface SignInHeroProps {
     ownerId: string;
   }[];
 }
-export default function SignInHero({ subdomains }: SignInHeroProps) {
+export default function SignInHero({ subdomains }: signInHeroProps) {
   const { addSubdomains } = useSubDomain();
   useEffect(() => {
     addSubdomains(subdomains);
@@ -23,7 +23,7 @@ export default function SignInHero({ subdomains }: SignInHeroProps) {
   return (
     <>
       <section>
-        <h1 className="p-2 w-fit">Add New sub domain</h1>
+        <h1 className="px-2 w-fit">Add New sub domain</h1>
         <Form />
       </section>
       <section>

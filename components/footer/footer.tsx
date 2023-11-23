@@ -1,9 +1,10 @@
 import Image from "next/image";
+import BitcoinAddy from "./bitcoin-addy";
 
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-secondary rounded-lg flex flex-col md:flex-row gap-10 p-8 items-center justify-between">
+      <div className="bg-secondary border border-primary rounded-lg flex flex-col md:flex-row gap-10 p-8 items-center justify-between">
         <div className="flex flex-col gap-2">
           <span>
             Made with ❤️ by{" "}
@@ -46,13 +47,7 @@ export default function Footer() {
                 </g>
               </g>
             </svg>
-            <a
-              title="TeaByte Bitcoin Address"
-              href="bitcoin:bc1qdaj3mcww8ryr3vnyy9sy83yggafl762lquz56z"
-              className="hover:underline text-ellipsis overflow-hidden truncate text-sm max-w-[150px] md:max-w-[2000px]"
-            >
-              bc1qdaj3mcww8ryr3vnyy9sy83yggafl762lquz56z
-            </a>
+            <BitcoinAddy />
           </div>
         </div>
         <div className="flex gap-3">

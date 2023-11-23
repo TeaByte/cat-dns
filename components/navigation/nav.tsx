@@ -6,10 +6,10 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <nav className="sticky top-0 z-40 bg-background w-full flex flex-col gap-1 pt-1">
+    <nav className="sticky top-0 z-40 bg-background w-full flex flex-col gap-1 pt-1 mb-10">
       <div className="flex items-center justify-between px-5 py-1">
         <Link href="/">
-          <div className="flex items-center">
+          <div className="flex items-center animate-pulse">
             <Image
               src="/cat.png"
               alt="logo"
@@ -17,14 +17,14 @@ export default function Nav() {
               height={68}
               className="rounded-lg"
             />
-            catdns.in
+            <span>catdns.in</span>
           </div>
         </Link>
         <div className="flex items-center justify-center gap-3">
           <SignInButton />
         </div>
       </div>
-      <Separator />
+      <Separator className="border-b border-primary" />
     </nav>
   );
 }

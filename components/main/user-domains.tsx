@@ -3,7 +3,7 @@
 import SubDomain from "@/components/main/domains-section";
 import { useSubDomain } from "@/components/context/context";
 
-interface UserDomainsProps {
+interface userDomainsProps {
   subdomainsData: {
     id: string;
     subdomain: string;
@@ -13,13 +13,13 @@ interface UserDomainsProps {
   }[];
 }
 
-export default function UserDomains({ subdomainsData }: UserDomainsProps) {
+export default function UserDomains({ subdomainsData }: userDomainsProps) {
   const { subdomains } = useSubDomain();
 
   return (
-    <>
-      <h1 className="p-2 w-fit">Domains ({subdomains.length}/3)</h1>
-      <div className="bg-secondary rounded-lg flex flex-col md:items-center gap-10 p-8">
+    <section className="w-full">
+      <h1 className="px-2 w-fit">Domains ({subdomains.length}/3)</h1>
+      <div className="bg-secondary border border-primary rounded-lg flex flex-col md:items-center gap-10 p-8">
         {!!subdomains.length
           ? subdomains.map((subdomain) => (
               <SubDomain
@@ -30,8 +30,8 @@ export default function UserDomains({ subdomainsData }: UserDomainsProps) {
                 id={subdomain.id}
               />
             ))
-          : "You Don't Have Any Subdomains!"}
+          : "You Don't Have Any Subdomains Yet!"}
       </div>
-    </>
+    </section>
   );
 }

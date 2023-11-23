@@ -11,7 +11,7 @@ import DeleteBtn from "./delete-button";
 import { Button } from "../ui/button";
 import UpdateForm from "./update-section";
 
-interface SubDomainProps {
+interface subDomainProps {
   subdomain: string;
   record: string;
   content: string;
@@ -23,7 +23,7 @@ export default function SubDomain({
   record,
   content,
   id,
-}: SubDomainProps) {
+}: subDomainProps) {
   return (
     <>
       <div className="flex flex-col gap-2 items-center md:w-1/3">
