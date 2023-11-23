@@ -44,6 +44,3 @@
     ```sh
     npm run dev
     ```
-##
-
-![photo](https://i.ibb.co/8xN33sx/auth-hero-small.jpg)
