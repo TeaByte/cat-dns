@@ -61,7 +61,7 @@ export default function SignInButton() {
             clipRule="evenodd"
           ></path>
         </svg>
-        <span>Sign out ( {session.user?.name} )</span>
+        <span>Sign out</span>
       </Button>
     );
   }
