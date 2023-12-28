@@ -60,7 +60,7 @@ export default function Footer() {
               className="hover:scale-105 hover:opacity-80"
             />
           </a>
-          <a href="https://vercel.com" target="_blank">
+          <a href="https://shop.bytesyria.com" target="_blank">
             <Image
               src="/vercel.png"
               width={140}
