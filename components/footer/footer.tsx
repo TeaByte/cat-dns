@@ -51,7 +51,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex gap-3">
-          <a href="https://cloudflare" target="_blank">
+{/*           <a href="https://cloudflare" target="_blank">
             <Image
               src="/cloudflare.png"
               width={120}
@@ -59,13 +59,13 @@ export default function Footer() {
               alt="Service Provider ( Cloudflare DNS ) Logo"
               className="hover:scale-105 hover:opacity-80"
             />
-          </a>
+          </a> */}
           <a href="https://shop.bytesyria.com" target="_blank">
             <Image
               src="/vercel.png"
               width={140}
               height={100}
-              alt="Service Provider ( Vercel Hosting ) Logo"
+              alt="ByteSyria"
               className="hover:scale-105 hover:opacity-80"
             />
           </a>
