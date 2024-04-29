@@ -1,4 +1,6 @@
-
+this code is shit!
+Moved to: https://github.com/TeaByte/catway-dns
+---
 <p align="center">
   <img src="https://i.ibb.co/X7T10pM/12-Capture-modified.png">
 </p>
